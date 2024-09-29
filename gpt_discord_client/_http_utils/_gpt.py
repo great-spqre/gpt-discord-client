@@ -58,7 +58,7 @@ class _gpt_http_client:
 
     def response_to_gpt(self: Self, content: str) -> str:
 
-        local_history: List[Optional[Dict]] = []
+        local_history: List[Optional[Dict]] = self.history
 
         if len(local_history) == 0:
 
