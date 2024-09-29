@@ -3,6 +3,7 @@
   <img src="https://i.pinimg.com/originals/70/1b/b9/701bb938126e9f8bafc7241a2b2ff42f.jpg" width="400">
   <br>
   GPT (and TTS) Discord client bot
+  <br>
 </h1>
 
 ## Install lib
