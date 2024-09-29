@@ -19,7 +19,7 @@ def on_message(message: Dict):
     if message['t'] == 'MESSAGE_CREATE':
         
         # if a bot is mentioned in the message and not bot's message
-        if any(i['id'] == armen._discord_http_client.client_id for i in message['d']['mentions']) and message['d']['author']['id'] != armen._discord_http_client.client_id:
+        if any(i['id'] == client._discord_http_client.client_id for i in message['d']['mentions']) and message['d']['author']['id'] != client._discord_http_client.client_id:
 
             message['d']['content'] = message['d']['content'].replace(f'<@{client._discord_http_client.client_id}>', '')
 
