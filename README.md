@@ -26,5 +26,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# .env: token="your_discord_token"
+
 client = client(os.getenv('token'))
 ```
+[How to get a token](https://www.geeksforgeeks.org/how-to-get-discord-token/)
