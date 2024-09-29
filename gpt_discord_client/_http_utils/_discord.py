@@ -70,7 +70,7 @@ class _discord_http_client:
 
         return response.json()['username']
     
-    def reply_message(self: Self, channel_id: Union[str, int], guild_id: Union[str, int], message_id: Union[str, int], content: str) -> None:
+    def reply_message(self: Self, channel_id: Union[str, int], guild_id: Union[str, int], message_id: Union[str, int], content: str, tts: bool = False) -> None:
 
         _: Response = post(
             url=f'https://discord.com/api/v9/channels/{channel_id}/messages',
@@ -89,7 +89,7 @@ class _discord_http_client:
             }
         )
 
-    def send_message(self: Self, channel_id: Union[str, int], content: str) -> None:
+    def send_message(self: Self, channel_id: Union[str, int], content: str, tts: bool = False) -> None:
 
         _: Response = post(
             url=f'https://discord.com/api/v9/channels/{channel_id}/messages',
