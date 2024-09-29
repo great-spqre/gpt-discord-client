@@ -40,7 +40,7 @@ def on_message(message: Dict):
             # content: gpt 2 + 2 -> gpt answer "2 + 2 is 4, bro"
             elif message['d']['content'].lstrip().startswith('gpt') and len(message['d']['content']) > 3:
 
-                        threading.Thread(target=client.reply_with_gpt, args=[
+                threading.Thread(target=client.reply_with_gpt, args=[
                             message['d']['content'][4:], 
                             message['d']['id'], 
                             message['d']['channel_id'], 
