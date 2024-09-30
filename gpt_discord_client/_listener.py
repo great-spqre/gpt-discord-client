@@ -38,8 +38,7 @@ __all__: List[str] = [
 
 
 class _websocket_listener:
-
-
+
     def __init__(self: Self, uri: str) -> None:
 
         self.uri: str = uri
