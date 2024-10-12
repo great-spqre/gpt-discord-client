@@ -14,10 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
+
 from ._gpt_discord_client import *
 from ._discord_listener import *
 from ._listener import *
 from ._tts import *
 from ._client import *
 
-__version__: str = '0.0.1'
+__version__: str = '0.0.2'
+__license__: str = 'Apache'
+__copyright__: str = 'Copyright 2024 great-spqre'
